@@ -1,7 +1,7 @@
 # TMPS_Lab1
 
 ## Author: `Nichiforov Maxim`
-## Topic: `Robot Builder Factory`
+## Topic: `Animal Shelter`
 
 ## Introduction:
     In this laboratory work I decided to create an animal shelter.
