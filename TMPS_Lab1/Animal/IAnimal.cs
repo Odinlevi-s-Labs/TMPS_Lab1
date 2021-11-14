@@ -4,11 +4,11 @@ namespace TMPS_Lab1
 {
     public interface IAnimal
     {
-        string Name { set; }
+        string Name { get; set; }
 
-        int Price { set; }
+        int Price { get; set; }
 
-        AgeType AgeType { set; }
+        AgeType AgeType { get; set; }
         
     }
 }

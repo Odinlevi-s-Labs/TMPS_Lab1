@@ -1,4 +1,5 @@
 ﻿using System;
+using TMPS_Lab1.AnimalCrossingFacade;
 using TMPS_Lab1.Factory;
 
 namespace TMPS_Lab1
@@ -18,6 +19,15 @@ namespace TMPS_Lab1
             Console.WriteLine(oldCat.ToString());
             Console.WriteLine(oldDog.ToString()); 
             Console.WriteLine(oldHamster.ToString());
+            
+            Console.WriteLine("V2!");
+
+            var catDogCrossingFacade = new CatDogCrossingFacade();
+            
+            Console.WriteLine("Let's create a CatDog!");
+            var catDog = catDogCrossingFacade.Create();
+
+            Console.WriteLine(catDog.ToString());
         }
     }
 }
