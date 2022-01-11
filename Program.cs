@@ -9,7 +9,7 @@ namespace TMPS_Lab1
         static void Main(string[] args)
         {
             Console.WriteLine("Here client starts to work with the application!");
-            
+
             IFactory oldAnimalFactory = OldAnimalFactory.Instance;
             
             var oldCat = oldAnimalFactory.Choose("cat");
@@ -20,7 +20,7 @@ namespace TMPS_Lab1
             Console.WriteLine(oldDog.ToString()); 
             Console.WriteLine(oldHamster.ToString());
             
-            Console.WriteLine("V2!");
+            Console.WriteLine("\nV2!\n");
 
             var catDogCrossingFacade = new CatDogCrossingFacade();
             
@@ -28,6 +28,25 @@ namespace TMPS_Lab1
             var catDog = catDogCrossingFacade.Create();
 
             Console.WriteLine(catDog.ToString());
+            
+            Console.WriteLine("\nV3!\n");
+            
+            var yourCollection = new AnimalCollection();
+            yourCollection[0] = catDog;
+            yourCollection[1] = oldCat;
+            yourCollection[2] = oldDog;
+            yourCollection[3] = oldHamster;
+            
+            Console.WriteLine("Let's see what you've got!");
+
+            var iterator = yourCollection.CreateIterator();
+
+            for (var animal = iterator.First(); !iterator.IsDone; animal = iterator.Next())
+            {
+                Console.WriteLine(animal.Name);
+            }
+
+
         }
     }
 }

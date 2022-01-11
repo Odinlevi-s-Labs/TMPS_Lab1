@@ -52,6 +52,15 @@ This time I've used 3 constructional design patterns:
 
 ![Result](./Resources/Result.png)
 
+### Lab 2
+
+This time we should've use behavioral design patterns. And which one could I use 
+in AnimalShelter to help little ones to get to their new family? I decided to use
+Iterator pattern. This one can help us handle all the things so far we have in
+our basket. And what we've got is the possibility to have all the chosen animals in
+one place, keeping the possibility to touch to each and every one of them.
+
+
 ## Conclusion
 The idea behind patterns I've used became a bit clearer for me after I've
 used them in practice. I can admit that some of them are very important for
